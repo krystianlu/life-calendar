@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life Calendar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.cdnfonts.com/css/br-sonoma" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="app">
+      <h1>Life Calendar</h1>
+      <h5>in months</h5>
+      <div class="inputs">
+        <div class="genderSelect">
+          <span class="infoText">Select Gender:</span>
+          <div>
+            <input type="radio" name="gender" value="male" class="radio" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" class="radio" />
+            <label for="female">Female</label>
+          </div>
+        </div>
+        <input type="month" id="date" />
+        <button onclick="updateLife()" id="updateBtn">Update Life</button>
+      </div>
+      <div class="quote" id="quoteBox"></div>
+      <span class="infoText">Select your habits:</span>
+      <div class="habits">
+        <button class="good" id="exercise" data-value="36">
+          Regular Exercise
+        </button>
+        <button class="good" id="diet" data-value="84">Healthy Diet</button>
+        <button class="good" id="social" data-value="48">
+          Healthy Social Life
+        </button>
+        <button class="bad" id="smoking" data-value="-108">Smoking</button>
+        <button class="bad" id="sleep" data-value="-18">Poor Sleep</button>
+        <button class="bad" id="sedLife" data-value="-24">
+          Sedentary Lifestyle
+        </button>
+      </div>
+      <div class="life" id="lifespan"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
