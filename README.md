@@ -52,3 +52,5 @@ index.html – Main structure of the app.
 script.js – Interactive logic for calculations, events, and updates.
 
 styles.css (not provided here) – Styling and layout.
+
+https://life-calendar-omega.vercel.app/
