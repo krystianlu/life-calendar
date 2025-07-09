@@ -164,5 +164,5 @@ gender.forEach((g) => {
 updateBtn.addEventListener("click", () => {
   const quoteBox = document.getElementById("quoteBox");
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-  quoteBox.textContent = `"${randomQuote}"`;
+  quoteBox.textContent = `${randomQuote}`;
 });
